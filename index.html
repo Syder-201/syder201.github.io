@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Recomendador de Filmes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Recomendador de Filmes</h1>
+
+    <label for="idade">Digite sua idade:</label>
+    <input type="number" id="idade" placeholder="Ex: 15" min="1" max="100" required>
+
+    <label for="generos">Selecione seus gêneros preferidos:</label>
+    <select id="generos" multiple>
+        <option value="fantasia">Fantasia</option>
+        <option value="aventura">Aventura</option>
+        <option value="drama">Drama</option>
+    </select>
+
+    <button onclick="recomendarFilme()">Obter Recomendação</button>
+
+    <div id="resultado"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
